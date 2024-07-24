@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#main{
+    background-image: url('https://assets-news.housing.com/news/wp-content/uploads/2022/08/18161022/INDONESIA-FEATURE-compressed.jpg');
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment: fixed; */
+}
+
+
+#b1{
+    width: 100%;
+    background-color: rgba(0,0,0,0.38);
+}
+
+#welcome{
+    padding: 30%;
+    padding-left: 10%;
+}
+
+#welcome h1{
+    color: white;
+    font-size: 45px;
+}
+
+@media(max-width:600px){
+    #welcome h1{
+        font-size: 30px;
+    }
+}
+
+
+#zoom{
+  transition: transform .2s; /* Animation */
+}
+#zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
